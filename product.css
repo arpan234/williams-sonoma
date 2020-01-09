@@ -1,0 +1,118 @@
+.products {
+	width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products .products_list {
+	position: relative;
+    width: 32.6%;
+    margin: 0 1% 1% 0;
+}
+.products .products_list:nth-of-type(3n+0) {
+	margin: 0;
+}
+.products .products_list .hero_image {
+	width: 100%;
+}
+.products .products_list span {
+	position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.products .products_list span.title {
+	width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #dedede;
+    background-image: linear-gradient(to right, #dedede, #fff);
+    opacity: 0.8;
+    color: #252424;
+}
+.products .products_list span.price {
+	bottom: 30px;
+    color: #fff;
+    left: 30px;
+    background: #716e6e;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.modal {
+	margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 254, 254, 0.86);
+    display: none;
+}
+.modal .images {
+	width: 50%;
+    margin: 10% auto;
+    position: relative;
+}
+.modal .images .modal_img {
+    width: 100%;
+    height: fit-content;
+}
+.modal .images .lists {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.modal .images i.fa-close {
+	position: absolute;
+    right: 0;
+    font-size: 25px;
+}
+.modal .images i.fa-chevron-left {
+	position: absolute;
+    top: 45%;
+    left: 0;
+    font-size: 25px;
+    background-color: rgba(255, 254, 254, 0.31);
+    padding: 12px;
+    border-radius: 22px;
+}
+.modal .images i.fa-chevron-right {
+	position: absolute;
+    top: 45%;
+    right: 0;
+    font-size: 25px;
+    background-color: rgba(255, 254, 254, 0.31);
+    padding: 12px;
+    border-radius: 22px;
+}
+.modal .images .circles {
+	display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    padding: 15px;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgba(84, 78, 78, 0.31);
+}
+.modal .images .circles span.circle {
+	width: 10px;
+    background-color: #3a3737;
+    height: 10px;
+    display: block;
+    margin-right: 10px;
+    border-radius: 12px;
+    border: 2px solid #fffF;
+}
+.modal .images .circles span.circle.active {
+	background-color: #ffff;
+}
+
+@media only screen and (max-width: 768px) {
+	.products {
+		display: initial;
+	}
+	.products .products_list {
+		width: 100%;
+	}
+}
